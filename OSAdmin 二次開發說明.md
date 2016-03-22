@@ -27,9 +27,17 @@
 以下對新 repo 的 dev 作業
 
 # 再度（／二次）開發
-待續……
+Structure:
+
+* HTML5
+* Smarty
+* Medoo
+* Bootstrap
+* Bootbox.js
 
 # 部署
+需要 pdo_mysql 支援
+
 有需要的話，將 `include/complied` 目錄寫入權限授予調用 php 模組的程式（如 `httpd`）
 
 ## 預設使用者
