@@ -27,19 +27,27 @@
 以下對新 repo 的 dev 作業
 
 # 再度（／二次）開發
-Structure:
-
+## Structure
 * HTML5
 * Smarty
 * Medoo
 * Bootstrap
 * Bootbox.js
 
-# 部署
-需要 pdo_mysql 支援
+## Structure of Database Tables
+* ~menu_url：功能列表，對應 `uploads/panel/menu.php`
+* ~module：功能表（菜單）模塊，對應 `uploads/panel/module.php`
+* ~quick_note：便籤管理，對應 `uploads/panel/quicknotes.php`
+* ~system：OSAdmin 時區記錄
+* ~sys_log：作業記錄
+* ~user：使用者（account）
+* ~user_group：使用者組及其能訪問的功能（列表），對應（帳號）組管理 `uploads/panel/groups.php` 及權限管理 `uploads/panel/group_role.php`
 
+# 部署
 有需要的話，將 `include/complied` 目錄寫入權限授予調用 php 模組的程式（如 `httpd`）
 
 ## 預設使用者
 * admin:123456
 * demo:123456
+
+需要 pdo_mysql 支援
