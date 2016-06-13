@@ -44,6 +44,7 @@ Commit:
 `git commit -m "{comment}"`
 
 without `-m {comment}`, editor would be called; you can also have a try of using `-v` at this time.
+
 Modify the last commit:
 `git commit -C HEAD --amend`
 
