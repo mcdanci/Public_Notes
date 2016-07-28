@@ -24,7 +24,7 @@
 - `I() // 用於輸入變數，good for debug`
 - `U('Module/Controller/method') // bulid the URL`
 - `C() // configuration`
-- `F() // read file`
+- `F() // 快速緩存 DATA_PATH`
 - `p()`
 - `halt()`
 - `_initialize() // 方法構造`
@@ -95,8 +95,9 @@ $Model->execute(); // as a operation of WRITING
 模塊 | Controller
 
 Non-standard **O**bject **R**elational **M**apping Model of **Active Record**
-f | f(x)
-- | ----
+
+f   | f(x)
+--- | ----
 table | class
 record | object
 
@@ -111,3 +112,7 @@ M()->_sql();
 // CURD 異常檢查
 M()->getDbError();
 ```
+
+#### 緩存
+資料查詢緩存：
+`M()->chche(true)`
