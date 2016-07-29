@@ -113,6 +113,11 @@ M()->_sql();
 M()->getDbError();
 ```
 
+#### 安全
+資料過濾可用 `stripslashes`，`htmlentities`，`htmlspecialchars`，`strip_tags` 諸函式。
+
+傳至 model 前可加上鏈式作業：`M()->filter()` 作過濾，同理，可用 `M()->field()` 作限定資料內容
+
 #### 緩存
 資料查詢緩存：
 `M()->chche(true)`
