@@ -36,6 +36,9 @@
 - `G() // runtime 統計`
 - `dump() // 變量調試`
 - `W()`
+- `theme()`
+- `fetch()`
+- `show()`
 
 ### URL 預設參名
 - module: m
