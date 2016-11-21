@@ -35,7 +35,7 @@
 - `T() // 取得模板文件名稱`
 - `G() // runtime 統計`
 - `dump() // 變量調試`
-- `W()`
+- `W() // widget`
 - `theme()`
 - `fetch()`
 - `show()`
